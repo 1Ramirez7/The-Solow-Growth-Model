@@ -736,6 +736,4 @@ server <- function(input, output, session) {
 
 shinyApp(ui = ui, server = server)
 
-# v4.3
-# added calculations for investment, consumption and depreciaon in the simulate_solow file
-# nothnig here should have change besides maybe some names to finish v4.2 or comments
+# This model was made under R-4.2.3 version due to the posit server having that same version. The shiny app cannot run using newer r version then the one in the posit server. Correction, it can run locally, but it just won't push to the posit server. 

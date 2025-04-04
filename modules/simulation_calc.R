@@ -19,7 +19,6 @@ simulate_solow <- function(num_periods, s, delta, n, z, l, A_init, L_init, exper
     Y        = rep(0.0, num_periods),
     investments   = rep(0.0, num_periods),  # v4.3
     consumption_s = rep(0.0, num_periods),  # v4.3
-    contri_to_c   = rep(0.0, num_periods),  # v4.3
     depreciation  = rep(0.0, num_periods) # v4.3
   )
   
