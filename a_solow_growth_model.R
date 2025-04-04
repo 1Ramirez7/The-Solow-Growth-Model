@@ -665,7 +665,7 @@ server <- function(input, output, session) {
   
   
   # v4 loop plot outputs, storing them in the plot_objects reactiveValues
-  # I need to switch this code to pull data from the results_..._exp_df instead of running simulate_...._exp_calculations. must fix ASAP. 
+  # I need to switch this code to pull data from the results_..._exp_df instead of running simulate_...._exp_calculations. 
   for (spec in plot_specs) {
     
     local({
@@ -736,4 +736,4 @@ server <- function(input, output, session) {
 
 shinyApp(ui = ui, server = server)
 
-# This model was made under R-4.2.3 version due to the posit server having that same version. The shiny app cannot run using newer r version then the one in the posit server. Correction, it can run locally, but it just won't push to the posit server. 
+#

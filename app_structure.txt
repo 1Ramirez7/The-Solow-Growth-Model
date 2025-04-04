@@ -1,23 +1,63 @@
-Load Libraries: Loads necessary R packages for UI, server logic, plotting, and data handling.
-1.	UI Setup:
-o	Defines a sidebar layout with input controls for simulation parameters, experiments, and data downloads.
-o	Creates tabs for different output views (World data, Plots, Log/Ratio Scale, Tables).
-2.	Server Setup:
-o	Data Import & Selection: Imports Excel data for savings rate and dynamically updates UI selections based on chosen regions/countries.
-3.	Experiment iteractive table
-o	Experiments Management: Allows users to define experiments and manage them via a reactive table with delete functionality.
-4.	Solow-Romer Model Simulation:
-o	Defines a function (simulate_solow) to compute economic variables over time with/without experiments.
-o	Updates simulation parameters dynamically based on user input.
-5.	Reactive Event Handling:
-o	Executes simulation upon user request, generating separate outputs for cases with and without experiments.
-o	Displays results in tabular format.
-6.	Plot Generation:
-o	Uses ggplot2 to visualize key economic variables over time.
-o	Provides an option to compare cases with and without experiments.
-7.	Download Functionality:
-o	Allows users to download simulation results as CSV.
-o	Saves plots as PNG files and packages them in a ZIP archive for download.
-8.	Shiny App Execution:
-o	Runs the Shiny app with the defined UI and server logic.
+# App Structure Overview
+
+---
+
+### 📦 Load Libraries  
+Loads necessary R packages for UI, server logic, plotting, and data handling.
+
+---
+
+### 1. 🧩 UI Setup  
+- Defines a sidebar layout with input controls for simulation parameters, experiments, and data downloads.  
+- Creates tabs for different output views:
+  - World Data  
+  - Plots  
+  - Log/Ratio Scale  
+  - Tables
+
+---
+
+### 2. 🖥️ Server Setup  
+
+#### Data Import & Selection  
+- Imports Excel data for savings rate  
+- Dynamically updates UI selections based on chosen regions/countries
+
+---
+
+### 3. 🧪 Experiment Interactive Table  
+
+#### Experiments Management  
+- Allows users to define experiments  
+- Manages them via a reactive table with delete functionality
+
+---
+
+### 4. 📊 Solow–Romer Model Simulation  
+- Defines a function (`simulate_solow`) to compute economic variables over time with/without experiments  
+- Updates simulation parameters dynamically based on user input
+
+---
+
+### 5. ⚙️ Reactive Event Handling  
+- Executes simulation upon user request  
+- Generates separate outputs for cases with and without experiments  
+- Displays results in tabular format
+
+---
+
+### 6. 📈 Plot Generation  
+- Uses **ggplot2** to visualize key economic variables over time  
+- Provides an option to compare cases with and without experiments
+
+---
+
+### 7. 💾 Download Functionality  
+- Allows users to download simulation results as CSV  
+- Saves plots as PNG files and packages them in a ZIP archive for download
+
+---
+
+### 8. 🚀 Shiny App Execution  
+- Runs the Shiny app with the defined UI and server logic
 

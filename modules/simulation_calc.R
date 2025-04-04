@@ -119,15 +119,15 @@ simulate_solow <- function(num_periods, s, delta, n, z, l, A_init, L_init, exper
     if (i == 1) {
       params$investments[i] <- params$s[i] * params$Y[i]  # v4.3 ask Moncayo if we can use this one or I_star?
       
-      params$consumption_s[i] <- (1 - params$s[i]) * params$Y[i] # v4.3. confirm calc. this is c_star in solow-romer math
+      params$consumption_s[i] <- (1 - params$s[i]) * params$Y[i] # v4.3. confirm calc. 
       
       params$depreciation[i] <- params$delta[i] * params$K[i]
     } else {
-      params$investments[i] <- params$s[i] * params$Y[i]  # v4.3 ask Moncayo if we can use this one
+      params$investments[i] <- params$s[i] * params$Y[i]  # v4.3 
       
-      params$consumption_s[i] <- (1 - params$s[i]) * params$Y[i] # v4.3. confirm calc. this is c_star in solow-romer math
+      params$consumption_s[i] <- (1 - params$s[i]) * params$Y[i] # v4.3.  
       
-      params$depreciation[i] <- params$delta[i] * params$K[i-1]
+      params$depreciation[i] <- params$delta[i] * params$K[i-1] # v4.3 confirm calc. 
     }
   } # v4.3
   

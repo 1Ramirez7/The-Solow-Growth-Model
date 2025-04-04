@@ -1,13 +1,22 @@
-# The-Solow-Growth-Model
+# The Solow Growth Model
 
-This model was built and pubblished in R studio under R version R-4.2.3 as of April 3, 2025. 
+This model was built and published in **RStudio**, using **R version 4.2.3** as of **April 3, 2025**.
 
+---
 
-the r file 'a_solow_growth_model.R' has the shiny app code. The modules and data folders need to be in the same root folder as the shiny app r file. 
+## 📂 File Structure
 
-See app_structure.txt and variable_names.md files for information on the structure of the code. 
+The R file `a_solow_growth_model.R` contains the Shiny app code.  
+The `modules` and `data` folders need to be in the **same root directory** as the Shiny app R file.
 
+Refer to the following files for more information on the code structure:
 
-Here is the link to the published shiny app
+- `app_structure.txt`  
+- `variable_names.md`
 
-https://4o85b6-eduardo-ramirez.shinyapps.io/The-Solow-Growth-Model/
+---
+
+## 🔗 Shiny App Link
+
+[https://4o85b6-eduardo-ramirez.shinyapps.io/The-Solow-Growth-Model/](https://4o85b6-eduardo-ramirez.shinyapps.io/The-Solow-Growth-Model/)
+
