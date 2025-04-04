@@ -1,6 +1,6 @@
 # The Solow Growth Model
 
-This model was built and published in **RStudio**, using **R version 4.2.3** as of **April 3, 2025**.
+This model was built and published in **RStudio**, using **R version 4.2.3** as of **April 3, 2025**. It was developed under the assumption that users input valid values for both exogenous and endogenous variables (e.g., a savings rate equal to or greater than 1 will result in division by zero).
 
 ---
 
