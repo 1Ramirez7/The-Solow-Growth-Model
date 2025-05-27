@@ -19,6 +19,7 @@ simulate_solow <- function(num_periods, s, delta, n, z, l, A_init, L_init, exper
     Y        = rep(0.0, num_periods),
     investments   = rep(0.0, num_periods),  # v4.3
     consumption_s = rep(0.0, num_periods),  # v4.3
+    contri_to_c   = rep(0.0, num_periods),  # v4.3
     depreciation  = rep(0.0, num_periods) # v4.3
   )
   
@@ -119,15 +120,19 @@ simulate_solow <- function(num_periods, s, delta, n, z, l, A_init, L_init, exper
     if (i == 1) {
       params$investments[i] <- params$s[i] * params$Y[i]  # v4.3 ask Moncayo if we can use this one or I_star?
       
-      params$consumption_s[i] <- (1 - params$s[i]) * params$Y[i] # v4.3. confirm calc. 
+      params$consumption_s[i] <- (1 - params$s[i]) * params$Y[i] # v4.3. confirm calc. this is c_star in solow-romer math
+      
+      params$contri_to_c[i] <- (1 - params$s[i]) * ((1 - params$l[i])^(1 - (1/3))) * (params$K[i]^(1/3)) # v4.3 one under c_star
       
       params$depreciation[i] <- params$delta[i] * params$K[i]
     } else {
-      params$investments[i] <- params$s[i] * params$Y[i]  # v4.3 
+      params$investments[i] <- params$s[i] * params$Y[i]  # v4.3 ask Moncayo if we can use this one
       
-      params$consumption_s[i] <- (1 - params$s[i]) * params$Y[i] # v4.3.  
+      params$consumption_s[i] <- (1 - params$s[i]) * params$Y[i] # v4.3. confirm calc. this is c_star in solow-romer math
       
-      params$depreciation[i] <- params$delta[i] * params$K[i-1] # v4.3 confirm calc. 
+      params$contri_to_c[i] <- (1 - params$s[i]) * ((1 - params$l[i])^(1 - (1/3))) * (params$K[i - 1]^(1/3)) # v4.3 this one is calculating share of consumption
+      
+      params$depreciation[i] <- params$delta[i] * params$K[i-1]
     }
   } # v4.3
   

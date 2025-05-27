@@ -5,9 +5,9 @@ account: ramirez
 server: posit.byui.edu
 hostUrl: https://posit.byui.edu/__api__
 appId: 568
-bundleId: 1156
+bundleId: 1179
 url: https://posit.byui.edu/content/314638db-a6bf-44c0-b57a-eb66d1166def/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: App Structure.docx|README.md|variable_names.md
+ignoredFiles: app_structure.txt|data/data_dictionary.md|README.md|variable_names.md
