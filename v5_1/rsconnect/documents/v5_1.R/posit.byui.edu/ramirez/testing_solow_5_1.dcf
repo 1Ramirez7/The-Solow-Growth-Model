@@ -1,0 +1,13 @@
+name: testing_solow_5_1
+title: testing_solow_5_1
+username: ramirez
+account: ramirez
+server: posit.byui.edu
+hostUrl: https://posit.byui.edu/__api__
+appId: 580
+bundleId: 1181
+url: https://posit.byui.edu/content/9644b622-93c3-4526-a771-2b47a601666a/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app_structure.txt|data/data_dictionary.md|README.md|variable_names.md
